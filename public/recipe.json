@@ -11,7 +11,7 @@
   {
       "recipe_id": "2",
       "recipe_name": "Caprese Salad",
-      "recipe_image": "https://i.ibb.co/BG0mXS3/close-up-photo-caprese-salad-with-mozzarella-tomato.jpg",
+      "recipe_image": "https://i.ibb.co/LNvm0FJ/close-up-photo-caprese-salad-with-mozzarella-tomato-1.png",
       "short_description": "A refreshing salad featuring fresh tomatoes, mozzarella cheese, and basil leaves.",
       "ingredients": ["3 ripe tomatoes", "200 g fresh mozzarella cheese", "50 g fresh basil leaves", "2 tbsp balsamic vinegar"],
       "preparing_time": 15,
@@ -20,7 +20,7 @@
   {
       "recipe_id": "3",
       "recipe_name": "Vegetable Stir Fry",
-      "recipe_image": "https://i.ibb.co/T8BL3VW/homemade-kung-pao-chicken-with-peppers-vegetables-chinese-food-stir-fry.png",
+      "recipe_image": "https://i.ibb.co/RD0RRKB/fried-vegetables-with-sauce-pan.png",
       "short_description": "A healthy stir-fry loaded with colorful vegetables and a savory sauce.",
       "ingredients": ["1 bell pepper", "1 onion", "100 g broccoli florets", "100 g snow peas", "150 g carrots"],
       "preparing_time": 20,
@@ -29,7 +29,7 @@
   {
       "recipe_id": "4",
       "recipe_name": "Pasta Primavera",
-      "recipe_image": "https://i.ibb.co/pj5PHLR/penne-pasta-with-pesto-sauce-zucchini-green-peas-basil-italian-food.jpg",
+      "recipe_image": "https://i.ibb.co/mv83jBs/penne-pasta-with-pesto-sauce-zucchini-green-peas-basil-italian-food.png",
       "short_description": "A classic pasta dish with assorted spring vegetables and a creamy sauce.",
       "ingredients": ["300 g pasta", "1 zucchini", "1 yellow squash", "100 g cherry tomatoes", "1/2 cup heavy cream"],
       "preparing_time": 25,
@@ -38,7 +38,7 @@
   {
       "recipe_id": "5",
       "recipe_name": "BBQ Tofu Skewers",
-      "recipe_image": "https://i.ibb.co/pZnWWpF/side-view-chicken-skewers-grilled-chicken-with-tomato-bell-pepper-sauce-lettuce-plate.jpg",
+      "recipe_image": "https://i.ibb.co/JtpTQSX/side-view-chicken-skewers-grilled-chicken-with-tomato-bell-pepper-sauce-lettuce-plate.png",
       "short_description": "Grilled tofu skewers marinated in tangy barbecue sauce.",
       "ingredients": ["400 g firm tofu", "120 ml barbecue sauce", "1 red bell pepper", "1 green bell pepper"],
       "preparing_time": 35,
@@ -47,7 +47,7 @@
   {
       "recipe_id": "6",
       "recipe_name": "Quinoa Salad with Chickpeas",
-      "recipe_image": "https://i.ibb.co/8s3Px9n/salads-with-quinoa-arugula-radish-tomatoes-cucumber-bowl-wooden-table-healthy-food-diet-detox-vegeta.jpg",
+      "recipe_image": "https://i.ibb.co/Wv6CcvR/salads-with-quinoa-arugula-radish-tomatoes-cucumber-bowl-wooden-table-healthy-food-diet-detox-vegeta.png",
       "short_description": "A protein-packed salad featuring quinoa, chickpeas, and fresh vegetables.",
       "ingredients": ["1 cup quinoa", "400 g canned chickpeas", "1 cucumber", "1 red onion", "1 lemon"],
       "preparing_time": 25,
