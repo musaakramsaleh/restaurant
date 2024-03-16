@@ -31,17 +31,21 @@ export default function Posts(){
         setArea(rep)
     }
     let time = 0;
-    let calorie = 0
-    cooking.map(cook=>{
-        time = time+cook.preparing_time
-        calorie = calorie+cook.calories
-    })
-    
+    let calorie = 0;
+
+    cooking.map(cook => {
+    const w = cook.preparing_time.split(' ');
+    const p = cook.calories.split(' ')
+    const numeric = parseInt(p[0])
+    const numericValue = parseInt(w[0]);
+    time += numericValue;
+    calorie+=numeric
+});
     return (
             <div className="flex gap-2 justify-between mb-20">
                 <div className="grid grid-cols-2 gap-5 w-[2/3] mt-[50px]">
              {
-                w.map(we=><div key={we.recipe_id} className="border rounded-2xl border-solid border-[#28282833] w-[380px] p-6 ">
+                w.map(we=><div key={we.recipe_id} className="border rounded-2xl border-solid  w-[380px] p-6 shadow-lg">
                 <img src={we.recipe_image} alt="image" />
                 <h2 className="mt-6 font-semibold text-xl mb-4">{we.recipe_name}</h2>
                 <p className="border-b border-solid pb-4 text-[#150B2BB3]">{we.short_description}</p>
@@ -52,8 +56,8 @@ export default function Posts(){
                             ))}
                         </ul>
                  <div className="flex gap-6 mt-3">
-                   <span className="flex justify-center items-center gap-2 text-[#150B2BB3]"><CiClock2 />{we.preparing_time} minutes</span>
-                   <span className="flex justify-center items-center gap-2 text-[#150B2BB3]"><HiFire />{we.calories} calories</span>
+                   <span className="flex justify-center items-center gap-2 text-[#150B2BB3]"><CiClock2 />{we.preparing_time}</span>
+                   <span className="flex justify-center items-center gap-2 text-[#150B2BB3]"><HiFire />{we.calories}</span>
                  </div>
                  <button onClick={()=>changeShape(we)} className=" px-5 py-3 border border-solid mt-5 font-medium text-[18px] rounded-[52px] bg-[#0BE58A] text-black">Want to Cook</button>
                  
@@ -73,8 +77,8 @@ export default function Posts(){
                     area.map((item,idx)=>(<div className="p-4 flex items-center justify-between text-[16px]  text-[#150B2BB3] font-medium bg-[#28282808]" key={item.recipe_id}>
                         <span>{1+idx}</span>
                         <span className="w-[122px]">{item.recipe_name}</span>
-                        <span className="w-[68px] text-center">{item.preparing_time} minute</span>
-                        <span className="w-64px">{item.calories} calories</span>
+                        <span className="w-[68px] text-center">{item.preparing_time}</span>
+                        <span className="w-64px">{item.calories}</span>
                         <span><button onClick={()=>{addCook(item)
                         deleteItem(item.recipe_id)}} className="px-[11px] py-[9px] bg-[#0BE58A] font-medium text-[16px] text-black rounded-2xl">Preparing</button></span>
                     </div>))
@@ -92,8 +96,8 @@ export default function Posts(){
                     cooking.map((item,idx)=>(<div className="p-4 flex items-center  text-[16px]  text-[#150B2BB3] font-medium bg-[#28282808]" key={item.recipe_id}>
                         <span>{1+idx}</span>
                         <span className="w-[122px] ml-[25px]">{item.recipe_name}</span>
-                        <span className="w-[68px] ml-[51px] text-center">{item.preparing_time} minute</span>
-                        <span className="w-64px ml-[70px]">{item.calories} calories</span>
+                        <span className="w-[68px] ml-[51px] text-center">{item.preparing_time}</span>
+                        <span className="w-64px ml-[70px]">{item.calories}</span>
                     </div>
                     ))
                     
@@ -101,8 +105,8 @@ export default function Posts(){
               </div>
             </div>
             <div className="w-[300px] mx-auto border-t border-solid border-[#28282833] flex justify-around mt-10">
-            <span className="text-[16px]  text-[#150B2BB3] ">Total time:{time}</span>
-            <span className="text-[16px]  text-[#150B2BB3] ">Total calorie:{calorie}</span>
+            <span className="text-xl  text-[#150B2BB3] text-center">Total time: {time} min</span>
+            <span className="text-xl  text-[#150B2BB3] text-center">Total calorie: {calorie} calorie</span>
             </div>
         </div>
         <ToastContainer />
